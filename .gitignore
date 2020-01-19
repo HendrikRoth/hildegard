@@ -1,0 +1,7 @@
+*.bak
+*.log
+*.swp
+*.var
+tool.tbl
+.messages.json
+.settings.json
