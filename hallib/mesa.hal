@@ -1,0 +1,12 @@
+loadrt hostmot2
+loadrt hm2_eth board_ip="10.10.10.10" config="firmware=hm2/7i76/7i76e.BIT num_encoders=0 num_pwmgens=0 num_stepgens=3 sserial_port_0=00xxxx" 
+loadrt pid names=pid.x,pid.y,pid.z,pid.s
+
+addf hm2_7i76e.0.read                            servo-thread
+addf motion-command-handler                      servo-thread
+addf motion-controller                           servo-thread
+addf hm2_7i76e.0.write                           servo-thread
+
+setp hm2_7i76e.0.dpll.01.timer-us                -50
+setp hm2_7i76e.0.stepgen.timer-number            1
+setp hm2_7i76e.0.watchdog.timeout_ns             5000000

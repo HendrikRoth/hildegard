@@ -1,4 +1,3 @@
-# example of a machine specific settings
 windows:
   mainwindow:
     kwargs:

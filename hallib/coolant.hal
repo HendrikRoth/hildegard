@@ -1,0 +1,2 @@
+net flood   <= iocontrol.0.coolant-flood
+net mist    <= iocontrol.0.coolant-mist

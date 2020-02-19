@@ -1,0 +1,51 @@
+loadrt trivkins
+loadrt [EMCMOT]EMCMOT servo_period_nsec=[EMCMOT]SERVO_PERIOD num_joints=[TRAJ]AXES
+
+# Axis X
+setp hm2_7i76e.0.stepgen.01.dirsetup             [AXIS_X]DIRSETUP
+setp hm2_7i76e.0.stepgen.01.dirhold              [AXIS_X]DIRHOLD
+setp hm2_7i76e.0.stepgen.01.steplen              [AXIS_X]STEPLEN
+setp hm2_7i76e.0.stepgen.01.stepspace            [AXIS_X]STEPSPACE
+setp hm2_7i76e.0.stepgen.01.position-scale       [AXIS_X]STEP_SCALE
+setp hm2_7i76e.0.stepgen.01.step_type            0
+setp hm2_7i76e.0.stepgen.01.control-type         0
+setp hm2_7i76e.0.stepgen.01.maxaccel             [AXIS_X]STEPGEN_MAXACCEL
+setp hm2_7i76e.0.stepgen.01.maxvel               [AXIS_X]STEPGEN_MAXVEL
+setp hm2_7i76e.0.gpio.002.invert_output          true
+
+net x-pos-cmd <= hm2_7i76e.0.stepgen.01.position-cmd <= joint.0.motor-pos-cmd
+net x-pos-fb  <= hm2_7i76e.0.stepgen.01.position-fb => joint.0.motor-pos-fb
+net x-enable  <= hm2_7i76e.0.stepgen.01.enable <= joint.0.amp-enable-out
+net max-home-x <=  hm2_7i76e.0.7i76.0.0.input-04-not
+
+# Axis Y
+setp hm2_7i76e.0.stepgen.00.dirsetup             [AXIS_Y]DIRSETUP
+setp hm2_7i76e.0.stepgen.00.dirhold              [AXIS_Y]DIRHOLD
+setp hm2_7i76e.0.stepgen.00.steplen              [AXIS_Y]STEPLEN
+setp hm2_7i76e.0.stepgen.00.stepspace            [AXIS_Y]STEPSPACE
+setp hm2_7i76e.0.stepgen.00.position-scale       [AXIS_Y]STEP_SCALE
+setp hm2_7i76e.0.stepgen.00.step_type            0
+setp hm2_7i76e.0.stepgen.00.control-type         0
+setp hm2_7i76e.0.stepgen.00.maxaccel             [AXIS_Y]STEPGEN_MAXACCEL
+setp hm2_7i76e.0.stepgen.00.maxvel               [AXIS_Y]STEPGEN_MAXVEL
+
+net y-pos-cmd <= hm2_7i76e.0.stepgen.00.position-cmd <= joint.1.motor-pos-cmd
+net y-pos-fb  <= hm2_7i76e.0.stepgen.00.position-fb => joint.1.motor-pos-fb
+net y-enable  <= hm2_7i76e.0.stepgen.00.enable <= joint.1.amp-enable-out
+net max-home-y <=  hm2_7i76e.0.7i76.0.0.input-05-not
+
+# Axis Z
+setp hm2_7i76e.0.stepgen.02.dirsetup             [AXIS_Z]DIRSETUP
+setp hm2_7i76e.0.stepgen.02.dirhold              [AXIS_Z]DIRHOLD
+setp hm2_7i76e.0.stepgen.02.steplen              [AXIS_Z]STEPLEN
+setp hm2_7i76e.0.stepgen.02.stepspace            [AXIS_Z]STEPSPACE
+setp hm2_7i76e.0.stepgen.02.position-scale       [AXIS_Z]STEP_SCALE
+setp hm2_7i76e.0.stepgen.02.step_type            0
+setp hm2_7i76e.0.stepgen.02.control-type         0
+setp hm2_7i76e.0.stepgen.02.maxaccel             [AXIS_Z]STEPGEN_MAXACCEL
+setp hm2_7i76e.0.stepgen.02.maxvel               [AXIS_Z]STEPGEN_MAXVEL
+
+net z-pos-cmd <= hm2_7i76e.0.stepgen.02.position-cmd <= joint.2.motor-pos-cmd
+net z-pos-fb  <= hm2_7i76e.0.stepgen.02.position-fb => joint.2.motor-pos-fb
+net z-enable  <= hm2_7i76e.0.stepgen.02.enable <= joint.2.amp-enable-out
+net max-home-z <=  hm2_7i76e.0.7i76.0.0.input-06-not
