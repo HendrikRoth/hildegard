@@ -13,18 +13,17 @@ setp hm2_7i76e.0.7i76.0.0.spinout-minlim         [SPINDLE]OUTPUT_MIN_LIMIT
 setp hm2_7i76e.0.7i76.0.0.spinout-maxlim         [SPINDLE]OUTPUT_MAX_LIMIT
 setp hm2_7i76e.0.7i76.0.0.spinout-scalemax       [SPINDLE]OUTPUT_SCALE
 
-#sets spindle-at-speed true
-
+net spindle-index-enable   spindle.0.index-enable    <=> pid.s.index-enable
+net spindle-vel-fb-rpm          => pid.s.feedback
 net spindle-vel-cmd-rpm         => hm2_7i76e.0.7i76.0.0.spinout
 net spindle-enable              => hm2_7i76e.0.7i76.0.0.spinena
 net spindle-ccw                 => hm2_7i76e.0.7i76.0.0.spindir
-
 net spindle-vel-cmd-rps        <=  spindle.0.speed-out-rps
 net spindle-vel-cmd-rps-abs    <=  spindle.0.speed-out-rps-abs
 net spindle-vel-cmd-rpm        <=  spindle.0.speed-out
 net spindle-vel-cmd-rpm-abs    <=  spindle.0.speed-out-abs
-net spindle-enable             <=  spindle.0.on
-net spindle-cw                 <=  spindle.0.forward
+net spindle-enable    pid.s.enable         <=  spindle.0.on
+net spindle-fwd                <=  spindle.0.forward
 net spindle-ccw                <=  spindle.0.reverse
 net spindle-brake              <=  spindle.0.brake
 net spindle-revs               =>  spindle.0.revs
