@@ -13,7 +13,7 @@ setp hm2_7i76e.0.7i76.0.0.spinout-minlim         [SPINDLE]OUTPUT_MIN_LIMIT
 setp hm2_7i76e.0.7i76.0.0.spinout-maxlim         [SPINDLE]OUTPUT_MAX_LIMIT
 setp hm2_7i76e.0.7i76.0.0.spinout-scalemax       [SPINDLE]OUTPUT_SCALE
 
-sets spindle-at-speed true
+#sets spindle-at-speed true
 
 net spindle-vel-cmd-rpm         => hm2_7i76e.0.7i76.0.0.spinout
 net spindle-enable              => hm2_7i76e.0.7i76.0.0.spinena
