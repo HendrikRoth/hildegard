@@ -10,5 +10,5 @@ net cycle-seconds qtpyvcp.timerseconds.in <= time.0.seconds
 net cycle-minutes qtpyvcp.timerminutes.in <= time.0.minutes
 net cycle-hours qtpyvcp.timerhours.in <= time.0.hours
 
-net spindle-vel-cmd-rpm => gmoccapy.spindle_feedback_bar
-net spindle-at-speed => gmoccapy.spindle_at_speed_led
+#net spindle-vel-cmd-rpm => gmoccapy.spindle_feedback_bar
+#net spindle-at-speed => gmoccapy.spindle_at_speed_led
