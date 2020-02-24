@@ -4,3 +4,5 @@ net tool-change-request     iocontrol.0.tool-change       =>  hal_manualtoolchan
 net tool-change-confirmed   iocontrol.0.tool-changed      <=  hal_manualtoolchange.changed
 net tool-number             iocontrol.0.tool-prep-number  =>  hal_manualtoolchange.number
 net tool-prepare-loopback   iocontrol.0.tool-prepare      =>  iocontrol.0.tool-prepared
+net toolchanger <= hm2_7i76e.0.7i76.0.0.input-13
+net toolchanger => hm2_7i76e.0.7i76.0.0.output-06
