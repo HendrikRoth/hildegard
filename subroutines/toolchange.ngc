@@ -1,6 +1,11 @@
 o<toolchange> sub
 (print, o<toolchange>)
 
+;assign the 3d probe toolnumber variable
+;is the active toolnumber set to the 3d probe toolnumber, activate the pneumatic probe open mechanic
+#200= #<_3DPROBE[TOOLTABLE_NUMBER]>
+M65 P0 ; deactivate, moves back in the 3d probe
+
 ;assign the tool numbers held in parameters to the pocket numbers
 #1 = #5190
 #2 = #5191
@@ -97,6 +102,10 @@ M66 P0 L3 Q4 ;check carousel in position sensor
    O210 endif
 M65 P1
 O200 ENDIF
+
+O220 IF [#110 EQ #200]
+  M64 P0 ; activate, moves out the 3d probe 
+O220 ENDIF
 
 ;assign the tool numbers in the pockets to the parameters
 #5190= #1
