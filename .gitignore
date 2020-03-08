@@ -6,3 +6,4 @@ tool.tbl
 .messages.json
 .settings.json
 .vcp_persistent_data.pickle
+*.pyc

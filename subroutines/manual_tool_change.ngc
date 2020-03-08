@@ -3,7 +3,7 @@
 
 o<manual_tool_change> sub
 
-M65 P#<_ini[3DPROBE]PNEUMATIC_PIN> ; moves back in the 3d probe
+M65 P#<_ini[3dprobe]pneumatic_pin> ; moves back in the 3d probe
 
 o10 if [#<selected_tool> EQ #<tool_in_spindle>]
     (msg, selected tool already in spindle.)
@@ -11,7 +11,10 @@ o10 if [#<selected_tool> EQ #<tool_in_spindle>]
     M2
 o10 endif
 
-o11 if [#<spindle_on> EQ 1]
+G53 G0 Z#<_ini[toolchange]position_z>
+G53 G0 X#<_ini[toolchange]position_x> Y#<_ini[toolchange]position_y>
+
+o11 if [#<_spindle_on> EQ 1]
     M5
 o11 endif
 
@@ -19,8 +22,8 @@ o12 if [[#<_mist> EQ 1] OR [#<_flood> EQ 1]]
     M9
 o12 endif
 
-O220 IF [#<selected_tool> EQ #<_ini[3DPROBE]TOOLTABLE_NUMBER>]
-  M64 P#<_ini[3DPROBE]PNEUMATIC_PIN> ; activate, moves out the 3d probe 
+O220 IF [#<selected_tool> EQ #<_ini[3dprobe]tool_number>]
+  M64 P#<_ini[3dprobe]pneumatic_pin> ; activate, moves out the 3d probe 
 O220 ENDIF
 
 o<manual_tool_change> endsub [1]

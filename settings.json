@@ -1,0 +1,328 @@
+{
+    "messages": [
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Named parameter #<_ini[3dprobe]pneumatic_pin> not defined \n", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "Manual", 
+            "task_state": "On", 
+            "timestamp": 1583679329.161811
+        }, 
+        {
+            "interp_mode": "Reading", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Probed Pos: -85.250700 Z Pos: \n -85.251667", 
+            "message_type": "info", 
+            "operator_id": "", 
+            "task_mode": "MDI", 
+            "task_state": "On", 
+            "timestamp": 1583679660.684462
+        }, 
+        {
+            "interp_mode": "Reading", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Probed Pos: -62.029700 Z Pos: \n -62.030667", 
+            "message_type": "info", 
+            "operator_id": "", 
+            "task_mode": "MDI", 
+            "task_state": "On", 
+            "timestamp": 1583679707.878748
+        }, 
+        {
+            "interp_mode": "Reading", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Probed Pos: 27.685533 Z Pos: \n 27.684567", 
+            "message_type": "info", 
+            "operator_id": "", 
+            "task_mode": "MDI", 
+            "task_state": "On", 
+            "timestamp": 1583679859.102529
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Linear move on line 4 \n would exceed Z's positive limit \n", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "MDI", 
+            "task_state": "On", 
+            "timestamp": 1583679863.678255
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Linear move on line 4 \n would exceed joint 2's positive \n limit", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "Manual", 
+            "task_state": "On", 
+            "timestamp": 1583679863.87793
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "invalid params in linear command \n", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "Manual", 
+            "task_state": "On", 
+            "timestamp": 1583679864.078449
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Named parameter #<_ini[3dprobe]pneumatic_pin> not defined \n", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "Manual", 
+            "task_state": "On", 
+            "timestamp": 1583680273.484544
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Named parameter #<_3dprobe[pneumatic_pin]> not defined \n", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "Manual", 
+            "task_state": "On", 
+            "timestamp": 1583680333.684366
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Named parameter #<_ini[3dprobe]pneumatic_pin> not defined \n", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "Manual", 
+            "task_state": "On", 
+            "timestamp": 1583680834.684601
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Named parameter #<_ini[3dprobe]pneumatic_pin> not defined \n", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "Manual", 
+            "task_state": "On", 
+            "timestamp": 1583680961.084227
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Named parameter #<selected_tool> not defined \n", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "MDI", 
+            "task_state": "On", 
+            "timestamp": 1583681118.956276
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Named parameter #<selected_tool> not defined \n", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "MDI", 
+            "task_state": "On", 
+            "timestamp": 1583681220.909238
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Named parameter #<tool_in_spindle> not defined \n", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "Manual", 
+            "task_state": "On", 
+            "timestamp": 1583681265.685153
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "Auto", 
+            "task_state": "E-Stop", 
+            "timestamp": 1583681290.09732
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Requested tool 999 not found \n in the tool table", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "MDI", 
+            "task_state": "On", 
+            "timestamp": 1583681324.110958
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Named parameter #<_tool_in_spindle> not defined \n", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "MDI", 
+            "task_state": "On", 
+            "timestamp": 1583681342.079576
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "pycall(remap.change_prolog) failed", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "Manual", 
+            "task_state": "On", 
+            "timestamp": 1583681542.084879
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "pycall(remap.change_prolog) failed", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "Manual", 
+            "task_state": "On", 
+            "timestamp": 1583682224.085108
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "pycall(remap.change_prolog) failed", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "Manual", 
+            "task_state": "On", 
+            "timestamp": 1583682234.347115
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "pycall(remap.change_prolog) failed", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "Manual", 
+            "task_state": "On", 
+            "timestamp": 1583682460.14166
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "pycall(remap.change_prolog) failed", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "MDI", 
+            "task_state": "On", 
+            "timestamp": 1583682623.286628
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Unexpected realtime delay on task \n 0 with period 1000000\nThis Message \n will only display once per \n session.\nRun the Latency Test and \n resolve before continuing.", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "Auto", 
+            "task_state": "E-Stop", 
+            "timestamp": 1583683430.326005
+        }, 
+        {
+            "interp_mode": "Reading", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Exceeded NEGATIVE soft limit (0.00000) \n on joint 1", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "MDI", 
+            "task_state": "On", 
+            "timestamp": 1583683609.102992
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Stop, fix joints axis LIMITS, \n then Restart", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "Manual", 
+            "task_state": "On", 
+            "timestamp": 1583683609.278632
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "selected tool already in spindle. \n", 
+            "message_type": "info", 
+            "operator_id": "", 
+            "task_mode": "Manual", 
+            "task_state": "On", 
+            "timestamp": 1583684635.28411
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "selected tool already in spindle. \n", 
+            "message_type": "info", 
+            "operator_id": "", 
+            "task_mode": "MDI", 
+            "task_state": "On", 
+            "timestamp": 1583684641.898882
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "Requested tool 22 not found \n in the tool table", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "Manual", 
+            "task_state": "On", 
+            "timestamp": 1583684649.279315
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "selected tool already in spindle. \n", 
+            "message_type": "info", 
+            "operator_id": "", 
+            "task_mode": "Manual", 
+            "task_state": "On", 
+            "timestamp": 1583684823.084712
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "the M6 remap procedure manual_tool_change \n did not return a value \n", 
+            "message_type": "error", 
+            "operator_id": "", 
+            "task_mode": "Manual", 
+            "task_state": "On", 
+            "timestamp": 1583684827.13651
+        }, 
+        {
+            "interp_mode": "Idle", 
+            "loaded_file": "/home/hendrik/linuxcnc/configs/hildegard/blank.ngc", 
+            "message_text": "selected tool already in spindle. \n", 
+            "message_type": "info", 
+            "operator_id": "", 
+            "task_mode": "Manual", 
+            "task_state": "On", 
+            "timestamp": 1583684946.288773
+        }
+    ], 
+    "settings": {
+        "machine.jog.linear-speed": 1821.6, 
+        "probe-parameters.probe-tool-number": 999.0, 
+        "tool-change-position.x-tool-change-position": -3.4, 
+        "tool-change-position.y-tool-change-position": 461.22, 
+        "tool-change-position.z-tool-change-position": 0.01, 
+        "tool-setter-probe.fast-probe-fr": 300.0, 
+        "tool-setter-probe.retract-distance": 1.0, 
+        "tool-setter-probe.slow-probe-fr": 20.0, 
+        "tool-setter-probe.spindle-nose-height": 136.5319, 
+        "tool-setter-probe.xy-max-travel": 20.0, 
+        "tool-setter-probe.z-max-travel": 140.0
+    }, 
+    "tool-in-spindle": 2
+}
