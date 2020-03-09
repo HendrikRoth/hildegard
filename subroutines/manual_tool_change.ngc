@@ -1,30 +1,32 @@
 ; manual toolchange with automatic pneumatic 3d probe interaction
-; http://linuxcnc.org/docs/html/gcode/overview.html#gcode:predefined-named-parameters
 
 o<manual_tool_change> sub
 
-M65 P#<_ini[3dprobe]pneumatic_pin> ; moves back in the 3d probe
+#<mist> = #<_mist>
+#<flood> = #<_flood>
 
-o10 if [#<selected_tool> EQ #<tool_in_spindle>]
-    (msg, selected tool already in spindle.)
-    o<manual_tool_change> endsub[1]
-    M2
+o10 if [#<selected_tool> eq #<tool_in_spindle>]
+  (msg, selected tool already in spindle.)
+  o<manual_tool_change> endsub[1]
+  M2
 o10 endif
 
-G53 G0 Z#<_ini[toolchange]position_z>
-G53 G0 X#<_ini[toolchange]position_x> Y#<_ini[toolchange]position_y>
+; moves back in the 3d probe
+M65 P#<_ini[3dprobe]pneumatic_pin>
 
-o11 if [#<_spindle_on> EQ 1]
-    M5
-o11 endif
+; deactivate coolant
+o<deactivate> call
 
-o12 if [[#<_mist> EQ 1] OR [#<_flood> EQ 1]]
-    M9
-o12 endif
+M6 T#<selected_tool>
+G43
 
-O220 IF [#<selected_tool> EQ #<_ini[3dprobe]tool_number>]
-  M64 P#<_ini[3dprobe]pneumatic_pin> ; activate, moves out the 3d probe 
-O220 ENDIF
+o20 if [#<selected_tool> eq #<_ini[3dprobe]tool_number>]
+  ; moves out the 3d probe 
+  M64 P#<_ini[3dprobe]pneumatic_pin>
+  o<restore> call [#<_metric>] [#<_absolute>] [#<_feed>] [0] [0]
+o20 else
+  o<restore> call [#<_metric>] [#<_absolute>] [#<_feed>] [#<mist>] [#<flood>]
+o20 endif
 
 o<manual_tool_change> endsub [1]
 M2
