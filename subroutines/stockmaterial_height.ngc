@@ -1,0 +1,9 @@
+; probe stock material height with the tool length sensor (z-finder)
+
+o<stockmaterial_height> sub
+	G10 L20 P2 Z0
+	G38.2 Z-5 f100
+	G10 L20 P2 Z#<_ini[TOOLPROBE]HEIGHT>
+	G1 G53 Z45 f200
+o<stockmaterial_height> endsub
+M2
